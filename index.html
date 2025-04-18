@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div>
+                <img class="img-logo" src="./src/assets/image/wings.png" alt="">
+                <span class="title">Horizon</span>
+            </div>
+            <form class="header-form">
+                <input class="username" type="text" placeholder="username">
+                <input class="pin" type="number" placeholder="PIN">
+                <button class="login_btn" type="submit"><img class="img-arrow" src="./src/assets/image/arrow.png"
+                        alt=""></button>
+            </form>
+        </div>
+    </header>
+
+    <div class="cover">
+        <div class="cover-container">
+            <h1>Where do <br> you want to go?</h1>
+            <p>With <span class="horizon-finance">Horizon Finance</span>, everything is possible!</p>
+            <button class="cover-btn">see more<img class="img-arrow-btn" src="./src/assets/image/arrow.png"
+                    alt=""></button>
+        </div>
+    </div>
+
+
+    <div class="hidden">
+
+
+        <div class="nav-container">
+            <span>Hello, Jonas!</span>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">My Account</a></li>
+                    <hr>
+                    <li><a href="#">My Cards</a></li>
+                    <hr>
+                    <li><a href="#">Pix Area</a></li>
+                    <hr>
+                    <li><a href="#">Statement</a></li>
+                    <hr>
+                    <li><a href="#">Preferences</a></li>
+                    <hr>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="main-container">
+            <div class="content">
+                
+                <!------------- div 1 --------------->
+                <div class="content-div-1">
+                    <div>
+                        <p class="balance">Current Balance</p>
+                        <p>as of 20 / 11 / 2000</p>
+                    </div>
+                    <span class="balance_display">401.300 €</span>
+                </div>
+                
+                <!------------- div 2 --------------->
+                <div class="content-div-2">
+                    <div class="movement_container">
+                        <div class="mov">
+                            <div class="movement_type">
+                                <p>1</p>
+                                <p>deposit</p>
+                            </div>
+                            <p>1.300 €</p>
+                        </div>
+                    </div>
+                    <div class="forms_container">
+                        <form class="tarfer">
+                            <p>tarfer money</p>
+                            <input class="input_trasfer_to" type="text" placeholder="transfer to">
+                            <input class="input_trasfer_amount" type="number" placeholder="amount">
+                            <button class="transfer_btn" type="submit">enter</button>
+                        </form>
+            
+                        <form class="request">
+                            <p>request loan</p>
+                            <input class="input_request_amount" type="number" placeholder="amount">
+                            <button class="request_btn" type="submit">enter</button>
+                        </form>
+            
+                        <form class="close">
+                            <p>Close Account</p>
+                            <input class="input_close_user" type="text" placeholder="user">
+                            <input class="input_close_pin" type="number" placeholder="pin">
+                            <button class="close_btn" type="submit">enter</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!------------- div 3 --------------->
+                <div class="content-div-3">
+                    <div>
+                        <p>in <span class="deposit_display"></span></p>
+                        <p>out <span class="withdrawal_display"></span></p>
+                        <p>interest <span class="interest_display"></span></p>
+                        <button class="sort_btn" type="submit">sort</button>
+                    </div>
+                    <p>you will be logged out in <strong>09:43</strong></p>
+                </div>
+            </div>
+
+            
+        </main>
+
+
+
+
+    </div>
+
+    <footer>
+        <p><strong>©2025 Theme by</strong> CatLovers group | <strong>All Rights Reserved</strong> | <strong>Powered
+                by</strong> WordPress</p>
+    </footer>
+
+
+
+    <script src="./src/index.js"></script>
+
+</body>
+
+</html>
