@@ -1,26 +1,26 @@
 const account1 = {
-    owner: 'Jonas Schmedtmann',
+    owner: 'Aiden Anderson',
     movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
     interestRate: 1.2,
     pin: 1111,
 };
 
 const account2 = {
-    owner: 'Jessica Davis',
+    owner: 'Brianna Brown',
     movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
     interestRate: 1.5,
     pin: 2222,
 };
 
 const account3 = {
-    owner: 'Steven Thomas Williams',
+    owner: 'Charles Clark',
     movements: [200, -200, 340, -300, -20, 50, 400, -460],
     interestRate: 0.7,
     pin: 3333,
 };
 
 const account4 = {
-    owner: 'Sarah Smith',
+    owner: 'David Davis',
     movements: [430, 1000, 700, 50, 90],
     interestRate: 1,
     pin: 4444,
@@ -61,6 +61,15 @@ const inputCloseUser = document.querySelector('.input_close_user');
 const inputClosePin = document.querySelector('.input_close_pin');
 const btnClose = document.querySelector('.close_btn');
 
+window.addEventListener("load", function () {
+    alert(
+        "Try the following data:\n" +
+        "Account 1 - Username: aa, PIN: 1111\n" +
+        "Account 2 - Username: bb, PIN: 2222\n" +
+        "Account 3 - Username: cc, PIN: 3333\n" +
+        "Account 4 - Username: dd, PIN: 4444"
+    );
+});
 
 const eurToUsd = 1.1;
 
@@ -77,9 +86,9 @@ const displaySummary = function (account) {
                     .filter(deposit => deposit >= 1)
                     .reduce((acc, int) => acc + int, 0);
 
-    depositsDisplay.textContent = `${deposits} €`;
-    withdrawalDisplay.textContent = `${withdrawal} €`;
-    interestDisplay.textContent = `${interest} €`;
+    depositsDisplay.textContent = ` ${deposits} €`;
+    withdrawalDisplay.textContent = ` ${withdrawal} €`;
+    interestDisplay.textContent = ` ${interest} €`;
 }
 
 
