@@ -43,6 +43,7 @@ const depositsDisplay = document.querySelector('.deposit_display');
 const withdrawalDisplay = document.querySelector('.withdrawal_display');
 const interestDisplay = document.querySelector('.interest_display');
 const btnSort = document.querySelector('.sort_btn');
+const username = document.querySelector('.username_display');
 
 const inputUsername = document.querySelector('.username');
 const inputPin = document.querySelector('.pin');
@@ -60,6 +61,7 @@ const btnRequest = document.querySelector('.request_btn');
 const inputCloseUser = document.querySelector('.input_close_user');
 const inputClosePin = document.querySelector('.input_close_pin');
 const btnClose = document.querySelector('.close_btn');
+
 
 window.addEventListener("load", function () {
     alert(
@@ -177,12 +179,12 @@ btnLogin.addEventListener('click', function (e) {
     e.preventDefault();
 
     currentAccount = accounts.find(acc => acc.username === inputUsername.value);
-    console.log(currentAccount);
 
     if (currentAccount?.pin === Number(inputPin.value)) {
 
         coverHidden.style.opacity = 0;
         containerHidden.style.opacity = 1;
+        username.innerHTML = `Hello, ${currentAccount.owner.split(' ')[0]}!`;
 
         inputUsername.value = inputPin.value = '';
         inputPin.blur();

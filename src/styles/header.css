@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9d7e2;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px 0;
+}
+
+.header-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #545454;
+}
+
+.img-logo {
+    width: 40px;
+    opacity: 60%;
+    margin-right: 5px;
+}
+
+.header-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-form > input {
+    color: #545454;
+    background-color: #9fb6c8;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.header-form > input:focus {
+    color: #ffffff;
+    background-color: #c9d7e2; 
+    transition: 1s ease;
+    border: 1px solid #ffffff;   
+}
+
+
+.header-form > input::placeholder {
+    color: #ffffff;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.header-form > button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.header-form > button:hover {
+    transform: scale(1.07);
+}
+
+.img-arrow {
+    width: 40px;
+    opacity: 60%;
+}

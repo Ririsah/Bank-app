@@ -1,0 +1,49 @@
+.content-div-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #545454;
+}
+
+.content-div-3 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-div-3 > div > p {
+    margin-right: 30px;
+    color: #ffffff;
+}
+
+.deposit_display,
+.withdrawal_display,
+.interest_display {
+    font-size: 1.6rem;
+}
+
+.deposit_display {
+    color: #b07649;
+}
+
+.withdrawal_display {
+    color: #1d2837;
+}
+
+.sort_btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #545454;
+    font-weight: bold;
+}
+
+.img-arrow-2 {
+    width: 7px;
+    opacity: 60%;
+    margin-right: 10px;
+}

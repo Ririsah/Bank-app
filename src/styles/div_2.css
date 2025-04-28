@@ -1,0 +1,170 @@
+.content-div-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.movement_container {
+    height: 550px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.movement_container::-webkit-scrollbar {
+    display: none; 
+}
+
+.mov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9d7e2;
+    padding: 30px 70px;
+    font-size: 1.1rem;
+    color: #545454;
+}
+
+.mov > p {
+    font-size: 1.3rem;
+}
+
+.movement_type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    background-color: #1d2837;
+    padding: 4px 0;
+    border-radius: 50px;
+} 
+
+.deposit {
+    background-color: #b07649;
+    color: #edc8ab;
+}
+
+.withdrawl {
+    background-color: #1d2837;
+    color: #6b7f9b;
+}
+
+
+.forms_container {
+    display: grid;
+    grid-template: 1fr, 3fr;
+    gap: 20px;
+    width: 40%;
+    height: 550px;
+}
+
+.tarfer,
+.request,
+.close {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-left: 40px;
+    color: #ffffff;
+}
+
+.tarfer > p,
+.request > p,
+.close > p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tarfer {
+    background-color: #b07649;
+}
+
+.request {
+    background-color: #1d2837;
+}
+
+.close {
+    background-color: #3a3237;
+}
+
+.tarfer > div,
+.request > div,
+.close > div {
+    display: flex;
+    gap: 10px;
+}
+
+.tarfer_div,
+.request_div,
+.close_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}  
+
+.tarfer_div > input,
+.request_div > input,
+.close_div > input {
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    width: 120px;
+    height: 30px;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.tarfer_div > input {
+    background-color: #cc9f7d;
+}
+
+.request_div > input {
+    background-color: #384a63;
+}
+
+.close_div > input {
+    background-color: #5e5259;
+}
+
+.tarfer_div > label,
+.request_div > label,
+.close_div > label {
+    font-size: 0.8rem;
+}
+
+.header-form > input:focus {
+    color: #ffffff;
+    background-color: #c9d7e2; 
+    transition: 1s ease;
+    border: 1px solid #ffffff;   
+}
+
+.tarfer > div > button,
+.request > div > button,
+.close > div > button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 30px;
+    cursor: pointer;
+}
+
+.tarfer > div > button:hover,
+.request > div > button:hover,
+.close > div > button:hover {
+    transform: scale(1.07);
+}
+
+.img-arrow-form {
+    width: 25px;
+    opacity: 60%;
+}

@@ -1,0 +1,21 @@
+.content-div-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.content-div-1 > div {
+    color: #545454;
+    font-size: 1.2rem;
+}
+
+.balance {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.balance_display {
+    color: #ffffff;
+    font-size: 3rem;
+}

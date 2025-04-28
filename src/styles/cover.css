@@ -1,0 +1,90 @@
+.cover {
+    display: flex;
+    background: url("../assets/image/bg2.jpg") center / cover;
+    height: 89vh;
+    transition: opacity 1s ease;
+}
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative; 
+    z-index: 1;
+    overflow: hidden; 
+    padding: 20px;
+    color: #ffffff;
+    width: 800px;
+}
+
+
+.cover-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1d2837;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.cover-container > h1 {
+    font-size: 4.5rem; 
+}
+
+.horizon-finance {
+    color: #ff8425;
+    font-weight: bold;
+}
+
+.cover-container > p {
+    font-size: 1.5rem;  
+}
+
+.cover-container > h1,
+.cover-container > p,
+.cover-container > button {
+    margin: 40px 0 40px 70px; 
+}
+
+.cover-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88a3c9;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.7rem;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.img-arrow-btn {
+    width: 30px;
+    opacity: 60%;
+    margin-left: 10px;
+}
+
+.cover-btn > span {
+    margin-right: 10px;
+}
+
+.cover-btn:hover {
+    transform: scale(1.07);
+    background: linear-gradient(300deg, #ff5e00, #88a3c9);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
